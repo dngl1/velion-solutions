@@ -1,30 +1,148 @@
+/* Resetta i margini e i padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Stile generale per il body */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f8ff; /* Azzurrino chiaro */
-    color: #333;
+    color: #333; /* Testo di colore grigio scuro */
+    line-height: 1.6;
 }
 
+/* Stile per l'header */
 header {
-    background-color: #333; /* Grigio scuro */
+    background-color: #4a90e2; /* Azzurrino più scuro */
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Stile per la barra di navigazione */
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin-top: 15px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
-nav ul li a
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3a78c3; /* Hover con un azzurrino più intenso */
+}
+
+/* Stile per il main */
+main {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff; /* Sfondo bianco */
+}
+
+main h2 {
+    font-size: 2em;
+    color: #4a90e2; /* Azzurrino scuro per i titoli */
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.2em;
+    color: #666; /* Testo in grigio */
+    margin-bottom: 20px;
+}
+
+/* Stile per le sezioni */
+#intro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Stile per i pacchetti */
+#packages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.package {
+    background-color: #f8f8f8; /* Sfondo grigio chiaro */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.package h3 {
+    font-size: 1.5em;
+    color: #4a90e2; /* Colore dei titoli */
+    margin-bottom: 10px;
+}
+
+.package p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Stile per il footer */
+footer {
+    background-color: #4a90e2; /* Azzurrino scuro */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3a78c3;
+}
+
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+    #packages {
+        flex-direction: column;
+    }
+
+    .package {
+        width: 100%;
+    }
+}
