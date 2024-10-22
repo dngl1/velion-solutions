@@ -6,12 +6,12 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f0f8ff; /* Azzurrino chiaro */
     color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #333; /* Grigio scuro */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -27,47 +27,4 @@ nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-h1 {
-    font-size: 36px;
-}
-
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-#intro {
-    margin-bottom: 40px;
-}
-
-#packages {
-    display: flex;
-    justify-content: space-around;
-}
-
-.package {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 30%;
-}
-
-.package h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    margin-top: 20px;
-}
+nav ul li a
