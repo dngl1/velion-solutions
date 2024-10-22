@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contattaci - Velion Solutions">
+    <title>Contatti - Velion Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Chi Siamo</a></li>
+                <li><a href="services.html">Pacchetti</a></li>
+                <li><a href="contact.html">Contatti</a></li>
+            </ul>
+        </nav>
+        <h1>Contattaci</h1>
+    </header>
+
+    <main>
+        <section id="contact-form">
+            <h2>Inviaci un messaggio</h2>
+            <form action="mailto:tuoindirizzo@email.com" method="post" enctype="text/plain">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Messaggio:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Invia</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Velion Solutions. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
